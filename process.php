@@ -101,6 +101,7 @@
     </style>
 </head>
 <body>
+    
     <div class="container">
         <h1>Form Submission Result</h1>
         <div class="result">
@@ -116,6 +117,7 @@
                 echo '<p class="success">Hello ' . $name . ', you are ' . $age . ' years old, and your favorite color is ' . $favorite_color . '.</p>';
             }
             ?>
+
         </div>
         <div class="text-center">
             <a href="form.html" class="btn">Go back to the form</a>
