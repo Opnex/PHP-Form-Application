@@ -101,7 +101,7 @@
     </style>
 </head>
 <body>
-<div class="container">
+    <div class="container">
         <h1>Form Submission Result</h1>
         <div class="result">
             <?php
@@ -112,8 +112,7 @@
                 $name = htmlspecialchars($_POST['name']);
                 $age = intval($_POST['age']);
                 $favorite_color = htmlspecialchars($_POST['favorite_color']);
-                
-                
+                  
                 echo '<p class="success">Hello ' . $name . ', you are ' . $age . ' years old, and your favorite color is ' . $favorite_color . '.</p>';
             }
             ?>
