@@ -114,22 +114,22 @@
                 $age = intval($_POST['age']);
                 $favorite_color = htmlspecialchars($_POST['favorite_color']);
                   
-                echo '<p class="success">Hello ' . $name . ', you are ' . $age . ' years old, and your favorite color is ' . $favorite_color . '.</p>';
+                // echo '<p class="success">Hello ' . $name . ', you are ' . $age . ' years old, and your favorite color is ' . $favorite_color . '.</p>';
 
-            //     $to = "thomasopeyemi1@gmail.com"; 
-            //     $subject = "New Form Submission";
-            //     $message = "A new user has submitted the form:\n\n"
-            //     . "Name: $name\n"
-            //     . "Age: $age\n"
-            //     . "Favorite Color: $favorite_color\n";
-            //     $headers = "From: thomasopeyemi2@gmail.com";
+                $to = "thomasopeyemi1@gmail.com"; 
+                $subject = "New Form Submission";
+                $message = "A new user has submitted the form:\n\n"
+                . "Name: $name\n"
+                . "Age: $age\n"
+                . "Favorite Color: $favorite_color\n";
+                $headers = "From: thomasopeyemi2@gmail.com";
 
             
-            // if (mail($to, $subject, $message, $headers)) {
-            //     echo '<p class="success">Hello ' . $name . ', you are ' . $age . ' years old, and your favorite color is ' . $favorite_color . '.<br>A confirmation email has been sent to the admin.</p>';
-            // } else {
-            //     echo '<p class="error">Form submitted, but email could not be sent.</p>';
-            // }
+            if (mail($to, $subject, $message, $headers)) {
+                echo '<p class="success">Hello ' . $name . ', you are ' . $age . ' years old, and your favorite color is ' . $favorite_color . '.<br>A confirmation email has been sent to the admin.</p>';
+            } else {
+                echo '<p class="error">Form submitted, but email could not be sent.</p>';
+            }
         }
             ?>
 
